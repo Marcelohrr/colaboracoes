@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root {
+    --cor-forte: #2b491f;
+    --cor-fraca: #2b491f80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    background-color: var(--cor-forte);
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1, p {
+    margin-bottom: 1rem;
+}
+
+p {
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+form {
+    padding: 0 1rem;
+}
+
+fieldset {
+    background-color: var(--cor-fraca);
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+legend {
+    background-color: white;
+    padding: 0 0.2rem;
+}
+
+div {
+    margin: 0.5rem 0;
+}
+
+/* Depois, colocar flex em input e select para encaixar input certinho ao lado do label */
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background: var(--cor-forte);
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+div#container {
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem 1rem;
+    border: 2px dashed var(--cor-forte);
+    padding: 0.5rem;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--cor-forte);
+    color: white;
+}
+
+tr:nth-child(even) {
+            background-color: var(--cor-fraca);
+        }
+
+th {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.35rem;
+}
